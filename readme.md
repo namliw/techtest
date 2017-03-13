@@ -32,6 +32,12 @@ composer install
 2. after composer is done installing visit your site and follow the installation instructions
 3. visit the admin section of the CMS and follow the How to use section
 
+note: to run the php unit tests on the module visit the webroot folder and run
+
+```
+vendor/bin/phpunit
+```
+
 ## How to use
 
 On a clean install you will need to create a new financial year in order to generate request to the work queue.
@@ -52,6 +58,3 @@ Once saved, you can now upload the CSV file to process or you can press "Generat
 Once the input file has been associated with the new job a button will appear "Generate invoice file" this will allow you to queue the current job for processing, once you press that button all editing capabilities will be disabled and will only be restored if the job ends in error. If everything goes well  you'll be presented with a link to download the final output file.
 
 It normally takes around 1 min to generate the new file, if an error occurs visit the "Jobs" section on the CMS to check the error message.
-
-
-
